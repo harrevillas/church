@@ -2,7 +2,7 @@ import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import AboutImg from "../assets/contact.jpg";
 import Footer from "../components/Footer";
-import ContactForm from "../components/ContactForm";
+import PrayerRequest from "../components/PrayerRequest";
 
 function Contact() {
   return (
@@ -11,13 +11,13 @@ function Contact() {
       <Hero
         cName="hero-mid"
         heroImg={AboutImg}
-        title="Contact"
+        title="Prayer Request"
         btnClass="hide"
         text=""
         url=""
         buttonText=""
       />
-      <ContactForm />
+      <PrayerRequest />
       <Footer />
     </>
   );

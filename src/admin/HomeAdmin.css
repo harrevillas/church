@@ -1,0 +1,91 @@
+
+.home-admin-container {
+    max-width: 800px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+  }
+  
+
+  .title {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .content-section {
+    margin-bottom: 30px;
+  }
+  
+  .content-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+  }
+  
+ 
+  .save-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .photo-section {
+    text-align: center;
+  }
+  
+
+  .photo-container {
+    margin-bottom: 20px;
+  }
+  
+ 
+  .current-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+
+  .current-photo-label {
+    display: block;
+    margin-top: 5px;
+    color: #777;
+  }
+
+  .upload-section {
+    margin-top: 20px;
+  }
+
+  .file-input {
+    margin-bottom: 10px;
+  }
+  
+
+  .upload-button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .upload-button:hover {
+    background-color: #218838;
+  }
+  

@@ -1,12 +1,18 @@
+import React from 'react';
 import NavBar from "../components/NavBar";
 import Hero from "../components/Hero";
 import Destination from "../components/Destination";
 import Footer from "../components/Footer";
 import Mass from "../components/Mass";
 
-function Home() {
+interface HomeProps {
+  content: string;
+}
+
+const Home = ({ content }: HomeProps) => {
   return (
     <>
+      {/* Your Home component JSX */}
       <NavBar />
       <Hero
         cName="hero"
@@ -14,7 +20,7 @@ function Home() {
         title="In His Presence: A Home for Worship"
         text="In Christian worship, hearts find solace and souls unite in transformative harmony."
         buttonText="Join Us"
-        url="/"
+        url="/signup"
         btnClass="show"
       />
       <Destination />
@@ -25,3 +31,4 @@ function Home() {
 }
 
 export default Home;
+

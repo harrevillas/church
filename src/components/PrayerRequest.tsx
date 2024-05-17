@@ -1,8 +1,12 @@
 import "./ContactFormStyles.css";
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import axios from "axios"; 
-function ContactForm() {
+import { useNavigate } from "react-router-dom";
+
+function PrayerRequest() {
   const [formValue, setFormValue] = useState({ Name: '', Email: '', Subject: '', Message: '' });
+  const [message, setMessage]= useState('');
+  const navigate = useNavigate();
 
   const handleInput = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormValue({ ...formValue, [e.target.name]: e.target.value });
@@ -13,6 +17,11 @@ function ContactForm() {
     try {
       const formData= {Name: formValue.Name, Email: formValue.Email, Subject: formValue.Subject, Message: formValue.Message};
       const res = await axios.post("http://localhost/reacttypescript/api/user.php", formData);
+      if (res.data.success){
+        setMessage(res.data.success)
+        setTimeout(() => {
+        })
+      }
       console.log(res.data);
     } catch (error) {
       console.error('Error:', error);
@@ -21,7 +30,7 @@ function ContactForm() {
 
   return (
     <div className="from-container">
-      <h1>You can Contact us here!</h1>
+      <h1>You can send your Prayers here!</h1>
       <form onSubmit={handleSubmit}>
         <input placeholder="Name" name="Name" value={formValue.Name} onChange={handleInput} />
         <input placeholder="Email" name="Email" value={formValue.Email} onChange={handleInput} />
@@ -33,4 +42,4 @@ function ContactForm() {
   );
 }
 
-export default ContactForm;
+export default PrayerRequest;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <!-- Your HTML registration form -->
+    <form id="registration-form">
+        <!-- Form fields -->
+        <input type="text" id="name" placeholder="Name">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Password">
+        <button type="submit">Register</button>
+    </form>
+
+    <!-- JavaScript code for handling form submission -->
+    <script>
+        document.getElementById('registration-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent default form submission
+            
+            // Get form data
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            // Prepare data object
+            var formData = {
+                Name: name,
+                Email: email,
+                Password: password
+            };
+
+            // Make AJAX request to your PHP script
+            fetch('your_php_script_url', {
+                method: 'POST',
+                body: JSON.stringify(formData),
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.redirect) {
+                    // Redirect to another page
+                    window.location.href = '/messenger';
+                } else if (data.error) {
+                    // Handle other errors if needed
+                    console.error(data.error);
+                } else {
+                    // Handle successful registration
+                    console.log(data.success);
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        });
+    </script>
+
+</body>
+</html>

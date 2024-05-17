@@ -6,7 +6,7 @@ export const MenuItems = [
       icon: "fa-solid fa-house",
     },
     {
-      title: "About",
+      title: "Announcement",
       url: "/about",
       cName: "nav-links",
       icon: "fa-solid fa-circle-info",
@@ -18,7 +18,7 @@ export const MenuItems = [
       icon: "fa-solid fa-calendar-days",
     },
     {
-      title: "Contact",
+      title: "Prayers",
       url: "/contact",
       cName: "nav-links",
       icon: "fa-solid fa-address-book",

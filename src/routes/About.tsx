@@ -11,7 +11,7 @@ function About() {
       <Hero
         cName="hero-mid"
         heroImg={AboutImg}
-        title="About"
+        title="Announcement"
         btnClass="hide"
         text=""
         url=""

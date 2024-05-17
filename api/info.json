@@ -1,0 +1,172 @@
+{
+    "cards": [
+        {
+            "_id": 1,
+            "name": "Sales",
+            "icon": "bi bi-cart",
+            "amount": 145,
+            "percentage": 0.12,
+            "active": true
+        },
+        {
+            "_id": 2,
+            "name": "Revenue",
+            "icon": "bi bi-currency-dollar",
+            "amount": 3246,
+            "percentage": 0.08,
+            "active":false
+        },
+        {
+            "_id": 3,
+            "name": "Customers",
+            "icon": "bi bi-people",
+            "amount": 1244,
+            "percentage": -0.11,
+            "active":false
+        }
+    ],
+    "news": [
+        {
+            "_id": 1, 
+            "img": "../assets/Feast Worship 1.jpg",
+            "title": "Nihil blanditiis at in nihil autem",
+            "subtitle": "Sit recusandae non aspernatur laboriosam. Quia enim eligendi sed ut harum",
+            "category": "abc"
+        },
+        {
+            "_id": 2,
+            "img": "../assets/Feast Worship 2.jpg",
+            "title": "Quidem autem et impedit",
+            "subtitle": "Illo nemo neque maiores vitae officiis cum eum turos elan dries werona",
+            "category": "abc"
+        },
+        {
+            "_id": 3, 
+            "img": "../assets/Feast Worship 3.jpg",
+            "title": "Id quia et et ut maxime similique occaecati ut",
+            "subtitle": "Fugiat voluptas vero eaque accusantium eos",
+            "category": "abc"
+        },
+        {
+            "_id": 4,
+            "img": "../assets/Feast Worship 4.jpg",
+            "title": "Laborum corporis quo dara net para",
+            "subtitle": "Qui enim quia optio. Eligendi aut asperios enim repellendusvel",
+            "category": "abc"
+        },
+        {
+            "_id": 5,
+            "img": "../assets/Feast Worship 6.jpg",
+            "title": "Et dolores corrupti quae illo quod dolor",
+            "subtitle": "Odit ut eveniet modi reiciendis. Atque cupiditate libero",
+            "category": "abc"
+        }
+    ],
+    "topselling": [
+        {
+            "_id": 1,
+            "preview": "../assets/Good Friday.png",
+            "name": "Ut inventore ipsa voluptas nulla",
+            "price": 64,
+            "sold": 124
+        },
+        {
+            "_id": 2,
+            "preview": "../assets/Good Friday.png",
+            "name": "Exercitationem similique doloremque",
+            "price": 46,
+            "sold": 98
+        },
+        {
+            "_id": 3,
+            "preview":"../assets/Good Friday.png",
+            "name": "Doloribus nisi exercitationem",
+            "price": 59,
+            "sold": 74
+        },
+        {
+            "_id": 4,
+            "preview":"../assets/Good Friday.png",
+            "name": "Officiis quaerat sint rerum error",
+            "price": 32,
+            "sold": 63
+        },
+        {
+            "_id": 5, 
+            "preview":"../assets/Good Friday.png",
+            "name": "Doloribus nisi exercitationem",
+            "price": 79,
+            "sold": 41
+        }
+    ],
+    "recentsales": [
+        {
+            "_id": 1,
+            "number": "#2457",
+            "customer": "Brandon Jacob",
+            "product": "At praesentium minu",
+            "price": 64,
+            "status": "Approved"
+        },
+        {
+            "_id": 2,
+            "number": "#2147",
+            "customer": "Bridie Kessler",
+            "product": "Blanditiis dolor omnis similique",
+            "price": 47,
+            "status": "Pending"
+        },
+        {
+            "_id": 3,
+            "number": "#2049",
+            "customer": "Ashleigh Langosh",
+            "product": "At recusandae consectetur",
+            "price": 147,
+            "status": "Approved"
+        }
+    ],
+    "recentactivity": [
+        {
+            "_id": 1,
+            "time": "32 min",
+            "color": "text-success",
+            "content": "Quia quae rerum explicabo officiis beatae",
+            "highlight": "explicabo officiis"
+        },
+        {
+            "_id": 2,
+            "time": "56 min",
+            "color": "text-danger",
+            "content": "Quia quae rerum explicabo officiis beatae",
+            "highlight": ""
+        },
+        {
+            "_id": 3,
+            "time": "2 hrs",
+            "color": "text-primary",
+            "content": "Quia quae rerum explicabo officiis beatae",
+            "highlight": ""
+        },
+        {
+            "_id": 4,
+            "time": "1 day",
+            "color": "text-info",
+            "content": "Quia quae rerum explicabo officiis beatae",
+            "highlight": ""
+        },
+        {
+            "_id": 5,
+            "time": "2 days",
+            "color": "text-warning",
+            "content": "Quia quae rerum explicabo officiis beatae",
+            "highlight": ""
+        },
+        {
+            "_id": 6,
+            "time": "4 weeks",
+            "color": "text-muted",
+            "content": "Quia quae rerum explicabo officiis beatae",
+            "highlight": ""
+        }
+    ]
+}

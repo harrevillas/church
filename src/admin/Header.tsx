@@ -1,18 +1,20 @@
- import React from 'react'
- import"./Header.css";
+import React from 'react'
+import './Header.css';
 import Logo from './Logo';
+import Nav from './Nav';
 
- function Header (){
-    return (
-        <header id='header' 
-        className='header fixed-top d-flex align-items-center'>
-        {/*logo*/}
-        <Logo />
-         {/*search*/}
-          {/*navbar*/}
-            
-        </header>
-    );
- }
+function Header() {
+  return (
+    <header id='header' className='header fixed-top d-flex align-items-center'>
+        {/* {logo} */}
+        <Logo/>
+            {/* {search bar} */}
+                {/* {nav} */}
+                <Nav />
 
- export default Header
+    </header>
+  )
+
+}
+
+export default Header;

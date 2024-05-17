@@ -1,37 +1,30 @@
+
+
+
 .logo-container {
     display: flex;
-}
-
-.sidebar {
-    width: 250px;
-    height: 100vh;
-    background-color: #333;
-    position: fixed;
-    left: -250px;
-    transition: left 0.3s ease-in-out;
-}
-
-.sidebar-open {
-    left: 0;
-}
-
-.logo-content {
-    margin-left: 10px; 
-    display: flex;
     align-items: center;
+}
+
+.logo {
+    margin-right: -200px; /* Adjust as needed */
+}
+
+.toggle-sidebar-btn {
+    margin-right: 50px; /* Adjust as needed */
 }
 
 .logo {
     line-height: 1;
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .logo {
         width: 280px;
     }
 }
 
-.logo img{
+.logo img {
     max-height: 26px;
     margin-right: 6px;
 }
@@ -40,4 +33,5 @@
     font-size: 26px;
     font-weight: 700;
     color: #012970;
+    font-family: sans-serif;
 }
